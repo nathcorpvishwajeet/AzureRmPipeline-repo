@@ -12,7 +12,7 @@ pool:
 steps:
 - task: AzureResourceGroupDeployment@2
   inputs:
-    azureSubscription: '[YourServiceConnectionName]'
+    azureSubscription: 'AzureRmPipeline-conn'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'AzureRmPipeline-rg'
     location: 'Central US'
